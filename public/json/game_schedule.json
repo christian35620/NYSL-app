@@ -1,0 +1,306 @@
+var data={
+  "fechas":[
+    {
+      "fecha": "2019-09-01",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"AJ Katzenmaier",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U1",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U4",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"Greenbay",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U3",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U2",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-09-08",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"Howard A Yeager",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U5",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U6",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"Marjorie P Hart",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U6",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U1",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-09-15",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"North",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U2",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U4",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"AJ Katzenmaier",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U3",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U5",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-09-22",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"South",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U1",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U3",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"Howard A Yeager",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U2",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U6",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-09-29",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"Greenbay",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U4",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U5",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-10-06",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"Marjorie P Hart",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U2",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U5",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"South",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U1",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U6",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-10-08",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"Howard A Yeager",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U3",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U4",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"Greenbay",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U5",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U1",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-10-20",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"North",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U6",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U3",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"Marjorie P Hart",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U2",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U4",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "fecha": "2019-10-27",
+      "partidos":[
+        {
+          "partido":"1",
+          "campo":"AJ Katzenmaier",
+          "hora":"9:30 a.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U3",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U1",
+              "logo_equipo":"source"
+            }
+          ]
+        },
+        {
+          "partido":"2",
+          "campo":"Howard A Yeager",
+          "hora":"1:00 p.m.",
+          "equipos":[
+            {
+              "nombre_equipo":"U5",
+              "logo_equipo":"source"
+            },
+            {
+              "nombre_equipo":"U6",
+              "logo_equipo":"source"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+ }
+
+ 

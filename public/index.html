@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>NYSL Game Schedule</title>
+        <meta charset="utf-8">
+
+        <!-- Icono en la pestaña de Chrome - Desktop - base64 sample encoder-->
+        <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAPCAYAAADtc08vAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+        jwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAANQSURBVDhPZZNbTJMHGIb/excThXHhxRYXNKIO
+        JMylYmNHW1sslK4tP1pkRYo1MAar4jBiYe3Q/rZAC+NQ2q5yWH+s4GHMyfBcI4lkGEyJTtZ5iqLu
+        ZgfdXBjmf79tpbuZz9V38T5fvuTNx/yfz+6tyDDwUoeuUzOl9xS9UDfrXhh8+hslISnnml29LhF7
+        ld/ojSX6I7KjKlslVbZ2U61ngDr58xQYjtAm8wFK27qT1E1VpA/Kw0RvL0loC3yPZUmazryo4WAz
+        fc6P0uDouGD19Ql7u9wCxweFVP0OwXywW/Afv0ClzjaSNsumZygrOaEzjMafM7q3p4/4M1dg/NQN
+        kUWHCv8uuL9xQFnPIqUoHe/W6GDzD2Lg9CUU2VykDcjG4nLFRKqIdX5CwZMXcbj3ONZ9LEHjoB3/
+        cS4yCVODC4r9BqiatKj1BGHvCYN11tFHk2s2MuyALHCYP4WRy9eRUZmHs7EQ5p8BNa4OsLUNePDk
+        p/iiye9iGJ70xTP8mauw9w6hsE/Wy2xx595fq6mFuHQftnCqePjHuw/ArBGDWfwWGn39mH/5El+f
+        j+Di9QmUekuw3rAbKWITlG7lLCOx5/0pb12B5eXpyKzZjOEL47h15x4sLZ3ILqvGlalpRG//gLTC
+        MqQot0F7qATLzWuhcK/CJlv+PJPbknd/5U4RXsvdgKVsBpSWuvgVc3/8joePHy/Mz58hq7gCScr3
+        kVOfj8W5IqSZN0LhUs0yBl7+RXJOKUrq25FtKUKVdx9++fkvPHw0C2cwhKmZGG7cvI1bM0/BjRyC
+        fH8xVmurwWTpYQwr+5iqyKoNxnYr+YbPocH7JRSNLMaip8D5B8CslGBRthaXxycw82sEcpsa1u4Q
+        jnx1CSp7De25li6OV6nqkoyVuzrIO/Qt9ngC/1T2AQpshZDWsTBwZmi5QrxTnY/drQG0hUZgcnaQ
+        2is9G5f/5TlJkmUtm6eNnIds3mPUFjotNPr7BZOzSRDtKhe2HnAIjuAJoSs8Rh+295DUJbv5BOLX
+        E/oCgGhpgV8S1nMW2uHwUFPgBNW5eRKXWcnaFY7/h85hoQLfe0PA+qSE9irWWGrmdl7m3O5no5pm
+        /ZzapZsz9RdHjccUTmvszcxELAHD/A3q/vcmSTAR1QAAAABJRU5ErkJggg==" rel="icon" type="image/x-icon" />
+
+        <!-- app-icon para escritorio Mobile -->
+        <link rel="icon" href="./favicon.ico" type="image/x-icon"> 
+        <link rel="manifest" href="./manifest.json">
+        <meta name="application-name" content="NYSL">
+        <meta name="theme-color" content="#033949"/>
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+        <link rel="shortcut icon" sizes="16x16" href="./icons/app-icon16.png">
+        <link rel="shortcut icon" sizes="128x128" href="./icons/app-icon128.png">
+        <link rel="shortcut icon" sizes="192x192" href="./icons/app-icon192.png">
+        <link rel="shortcut icon" sizes="512x512" href="./icons/app-icon512.png">
+
+        <link rel="apple-touch-icon" href="./icons/app-icon60.png">
+        <link rel="apple-touch-icon" sizes="16x16" href="./icons/app-icon16.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./icons/app-icon76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./icons/app-icon120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./icons/app-icon152.png">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+        <!-- Material Design Lite -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+        <!-- App Styling -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+        <link rel="stylesheet" href="styles/main.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./json/play_fields.json"></script>
+        <script src="./json/game_schedule.json"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        <div id="app" class="calendar">
+            <div class="red sticky-top container-fluid" v-show="seccion"  >
+                <nav class="navbar navbar-expand-lg navbar-dark justify-content-sm-star">
+                    <div class="w-100 d-flex align-items-center">
+                        <button class="navbar-toggler"  @click="sidemenu" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <a class="navbar-brand pl-2" href="#">NYSL</a>
+                        <div class="d-flex flex-grow-1 justify-content-end">
+                            <a href="./index.html"><img class="logo" src="./images/nysl_logo.png" height="40" width="40" alt="logo TGIF"></a>
+                        </div>
+                    </div><!-- cierre hamburguer menu - titulo - logo -->
+                    <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu bg-dark p-3 w-75 p-lg-0 mt-lg-0" :class="{ open: isOpen }" id="navbarSupportedContent">
+                        <ul class="navbar-nav align-self-stretch">
+                            <li class="nav-item py-2 active d-flex justify-content-between align-items-center">
+                                <a class="nav-link d-flex flex-grow-1" href="#">Home <span class="sr-only">(current)</span></a>
+                                <button class="btn btn-outline-secondary px-3 py-2" @click="sidemenu" type="submit">X</button>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link" @click="goToInfo('GC');sidemenu();" href="#">GAME CALENDAR</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link" @click="goToInfo('GI');sidemenu();" href="#">GAME INFO</a>
+                            </li>
+                            <li class="nav-item py-2">
+                                <a class="nav-link" href="whatsapp://send?text=Hello, Coordinator&phone=630 690-8132&abid=630 690-8132">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div><!-- cierre ventana lateral de navegacion -->
+                </nav><!-- cierre seccion de navegacion -->
+                <div class="overlay" @click="sidemenu" :class="{ open: isOpen }"></div><!-- cierre mascara overlay  -->
+                <br>
+                <div class="row red pestana">
+                    <ul class="nav col-12 d-flex justify-content-around align-items-center">
+                        <li :class="activa('GC')">
+                            <a class="nav-link border border-0 rounded-0" @click="goToInfo('GC')" href="#">GAME SCHEDULE</a>
+                        </li>
+                        <li :class="activa('GI')">
+                            <a class="nav-link border border-0 rounded-0" @click="goToInfo('GI')" href="#">GAME INFO</a>
+                        </li>
+                    </ul>
+                </div><!-- cierre tabs de navegacion -->
+            </div><!-- cierre sticky-top container -->
+            
+            <div id="GC" v-show="section=='GC'">
+                <div class="container-fluid contenido">  
+                    <div class="banner">
+                        <img class="img-fluid" src="./images/triple_soccer.png"  alt="logo TGIF">
+                        <hr class="espacio-oculto">
+                    </div> <!-- cierre imagen banner -->
+                    <template v-for="(fecha,indice) in fechas">
+                        <div class="fecha_padre">
+                            <div class="row d-flex justify-content-center align-items-center fecha" v-html="getFecha(fecha.fecha)">
+                            </div><!-- cierre fecha individual -->
+                            <template v-for="(partido,index) in fecha.partidos">
+                                <div @click="changeURL(partido.id)"  data-target = "#postsCarousel" :data-slide-to="selector" class="row boton" :id="fecha.fecha+'-'+partido.partido">
+                                    <div class="col-2 texto d-flex justify-content-center align-items-center">{{partido.equipos[0].nombre_equipo}}</div>
+                                    <div class="col-8 d-flex flex-wrap text-center align-content-stretch">
+                                        <div class="col-12 texto d-flex justify-content-center align-items-end">{{partido.campo}}</div>
+                                        <div class="col-12 texto d-flex justify-content-center align-items-start">{{partido.hora}}</div>
+                                    </div>
+                                    <div class="col-2 texto d-flex justify-content-center align-items-center">{{partido.equipos[1].nombre_equipo}}</div>
+                                </div><!-- cierre datos de partido -->
+                            </template><!-- cierre v-for partido in fecha.partidos -->
+                        </div>
+                        <hr class="espacio-oculto">
+                    </template><!-- cierre v-for fecha in fechas -->
+                    <br>
+                </div>
+            </div><!-- cierre seccion GC -->
+
+            <div id="GI" v-show="section=='GI'">
+                <div class="container-fluid contenido mapa-padre7">  
+                    <br class="espacio-oculto">
+                    <div class="row navegacion">
+                        <div class="col-3 d-flex justify-content-center align-items-center"><button class="left carousel-control" href="#postsCarousel" data-slide="prev"><img class="boton2 girado" src="./images/baseline-arrow_forward_ios-24px.svg" alt="Previous_button"></button></div>
+                        <div class="col-6 d-flex justify-content-center align-items-center fecha">
+                            <button @click="goToInfo('gamechat')" id="sign-in" ><i class="material-icons">account_circle</i>Sign in to Chat!</button> 
+                            <button hidden @click="goToInfo('gamechat')" id="go_chat" ><i class="material-icons">chat</i>Go Chat!</button> 
+                        </div>
+                        <div class="col-3 d-flex justify-content-center align-items-center"><button class="right carousel-control" href="#postsCarousel" data-slide="next"><img class="boton2" src="./images/baseline-arrow_forward_ios-24px.svg" alt="Next_button"></button></div>
+                    </div><!-- cierre botones de navegacion: atras-adelante -->
+                    <br class="espacio-oculto">
+                        
+                    <section class="carousel slide mapa-padre" data-ride="carousel" data-interval="false" id="postsCarousel">
+                        <div class="p-t-0 m-t-2 carousel-inner mapa-padre">
+                            <template v-for="(fecha,indice) in fechas">
+                                <div class="carousel-item m-t-0 mapa-padre" :id="fecha.fecha+'-'+partido.partido+'-'+'chat'" v-for="(partido,index) in fecha.partidos" :class="{ 'active': indice==0 & index == 0 }">
+                                    <div class="card cuadro_info mapa-padre">
+                                        <div class="card-block p-t-2 mapa-padre">
+                                            <div class=" d-flex justify-content-center align-items-center fecha" v-html="getFecha(fecha.fecha)">
+                                            </div><!-- cierre fecha partido -->
+                                            <div class="row" >
+                                                <div class="col-2 texto2 d-flex justify-content-start align-items-center">{{partido.equipos[0].nombre_equipo}}</div>
+                                                <div class="col-8 d-flex flex-wrap justify-content-center align-content-center">
+                                                    <div class="col-12 texto  d-flex  justify-content-center align-items-end">{{partido.campo}}</div>
+                                                    <div class="col-12 texto d-flex  justify-content-center align-items-start">{{partido.hora}}</div>
+                                                </div>
+                                                <div class="col-2 texto2 d-flex justify-content-end align-items-center">{{partido.equipos[1].nombre_equipo}}</div>
+                                            </div><!-- cierre datos de partido -->
+                                            <hr class="espacio-oculto">
+                                            <div class="row mapa-padre1">
+                                                <div class="col-12 texto d-flex justify-content-center align-items-start">
+                                                    <iframe class="marco-mapa" :src="getMap(partido.campo)" style="border:0" allowfullscreen></iframe>
+                                                </div><!-- cierre contenedor iframe -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- cierre v-for partido in fecha.partidos -->
+                            </template><!-- cierre v-for fecha in fechas -->
+                        </div><!-- cierre carousel inner -->
+                    </section><!-- cierre carousel slide --> 
+                </div>
+            </div><!-- cierre seccion GI -->
+
+            <div id="gamechat" v-show="section=='gamechat'" >
+                <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+                    <!-- Header section containing logo -->
+                    <header class="mdl-layout__header mdl-color-text--white">
+                      <div class="mdl-cell--12-col mdl-cell--12-col-tablet mdl-grid">
+                        <div id="user-container">
+                            <div id="goback">
+                                <div><button @click="goToInfo('GI')"><i class="material-icons">arrow_back</i></button></div>
+                                <div hidden id="user-pic"></div>
+                                <div hidden id="user-name"></div>
+                            </div>
+                            <button hidden id="sign-out" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+                                Sign-out
+                            </button>
+                          <!-- <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white">
+                            <i class="material-icons">account_circle</i>Sign-in with Google
+                          </button> -->
+                        </div>
+                      </div>
+                    </header>
+                  
+                    <main class="mdl-layout__content mdl-color--grey-100">
+                      <div id="messages-card-container" class="mdl-cell mdl-cell--12-col mdl-grid">
+                  
+                        <!-- Messages container -->
+                        
+                        <div id="messages-card"  class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--6-col-tablet mdl-cell--6-col-desktop">
+                          <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                                
+                            <div id="messages" >
+                              <span id="message-filler"></span>
+                            </div>
+                        
+                            <form id="message-form" action="#">
+                              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="message">
+                                <label class="mdl-textfield__label" for="message">Message...</label>
+                              </div>
+                              <button id="submit" disabled type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+                                Send
+                              </button>
+                            </form>
+                            <form id="image-form" action="#">
+                              <input id="mediaCapture" type="file" accept="image/*" capture="camera">
+                              <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400 mdl-color-text--white">
+                                <i class="material-icons">image</i>
+                              </button>
+                            </form>
+                          </div>
+                        </div>
+                        
+                  
+                        <div id="must-signin-snackbar" class="mdl-js-snackbar mdl-snackbar">
+                          <div class="mdl-snackbar__text"></div>
+                          <button class="mdl-snackbar__action" type="button"></button>
+                        </div>
+                  
+                      </div>
+                    </main>
+                </div>
+                  
+            </div><!-- cierre seccion gamechat -->
+        </div>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-toasted"></script>
+   
+    <!-- Insert the vue core before vue-toasted -->
+    
+
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/6.3.4/firebase-app.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-auth.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-storage.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/6.3.4/firebase-performance.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="./scripts/nysl_mobile.js"></script>
+    <script defer src="./scripts/chat.js"></script>
+    <!-- <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+          // // The Firebase SDK is initialized and available here!
+          //
+          // firebase.auth().onAuthStateChanged(user => { });
+          // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+          // firebase.messaging().requestPermission().then(() => { });
+          // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+          //
+          // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+  
+          try {
+            let app = firebase.app();
+            let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
+            document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
+          } catch (e) {
+            console.error(e);
+            document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
+          }
+        });
+      </script> -->
+</body>
+    <!-- <script>
+        if ('serviceWorker' in navigator) {
+        console.log("Will the service worker register?");
+        navigator.serviceWorker.register('./service-worker.js')
+            .then(function(reg){
+            console.log("Yes, it did.");
+            }).catch(function(err) {
+            console.log("No it didn't. This happened: ", err)
+            });
+        }
+    </script> -->
+</html>

@@ -1,0 +1,586 @@
+.red-head{
+	background-color: #771C1C;
+}
+.red{   
+	background-color: #981717;
+}
+
+.pestana{
+	z-index: -3 !important;
+}
+
+.color_text{
+	color: #981717;
+}
+
+.nav-link, .home{
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+.nav-item a:hover{
+	border: #EEE9E9 0.1rem solid;
+}
+
+.fecha{
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	color: #000000;
+}
+
+.texto{
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1rem;
+	color: #000000;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.texto2{
+	font-family: sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2rem;
+	color: #771C1C;
+	text-shadow: 0px 4px 4px rgba(224, 9, 9, 0.493);
+}
+
+.banner{
+	padding-top: 0.5rem;
+}
+
+.contenido{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.boton{
+	height: 5rem;
+	border-radius: 0.1rem;
+	margin-bottom: 0.5rem;
+	background: #EEE9E9;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.boton2{
+	height: 3rem;
+	width: 2.5rem;
+	border-radius: 0.1rem;
+}
+
+.boton2.girado{
+	height: 3rem;
+	width: 2.5rem;
+	border-radius: 0.1rem;
+	transform: rotate(180deg);
+}
+
+.cuadro_info{
+	border-radius: 0.1rem;
+	margin-bottom: 0.5rem;
+	background: #EEE9E9;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.active{
+	border-bottom: 0.5rem solid white;
+}
+
+/* equal card height */
+.row-equal > div[class*='col-'] {
+    display: flex;
+    flex: 1 0 auto;
+}
+
+.row-equal .card {
+   width: 100%;
+}
+
+/* ensure equal card height inside carousel */
+.carousel-inner>.row-equal.active, 
+.carousel-inner>.row-equal.next, 
+.carousel-inner>.row-equal.prev {
+    display: flex;
+}
+
+/* prevent flicker during transition */
+.carousel-inner>.row-equal.active.left, 
+.carousel-inner>.row-equal.active.right {
+    opacity: 0.5;
+    display: flex;
+}
+
+
+/* control image height */
+.card-img-top-250 {
+    max-height: 250px;
+    overflow:hidden;
+}
+
+#mediaCapture{
+	display: none;
+}
+
+.etiqueta{
+	width: 70%;
+}
+
+#message{
+	width: 100%;
+}
+
+form{
+	display: inline-block;
+}
+
+#message-form{
+	width: 85%;
+}
+
+#message-filler{
+	display: block;
+	height: 3rem;
+}
+
+.fixed-bottom {
+	background: #f3f3f3;
+    z-index: 2;
+}
+
+.message-container {
+    display: block;
+    margin-top: 10px;
+    border-top: 1px solid #f3f3f3;
+    padding-top: 10px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.message-container.visible {
+    opacity: 1;
+}
+
+.material-icons.orange600 { color: #FB8C00; }
+
+.message-container .pic {
+    background-image: url(/images/profile_placeholder.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 30px;
+    border-radius: 20px;
+}
+
+.message img {
+    max-width: 100%;
+    /* max-height: 200px; */
+}
+
+.message-container .name {
+    display: inline-block;
+    width: 100%;
+    color: #bbb;
+    font-style: italic;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+.message-container .message {
+    display: table-cell;
+    width: calc(100% - 40px);
+    padding: 5px 0 5px 10px;
+}
+
+@media (max-width:992px){
+	.mobileMenu{
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		transform: translateX(-100%);
+		transition: all ease 0.25s;
+	}
+	.mobileMenu.open{
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		transform: translateX(0);
+		transition: all ease 0.25s;
+	}
+	.overlay{
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: none;
+	}
+	.overlay.open{
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0%;
+		right: 0;
+		margin: auto;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: block;
+	}
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+	/* //CSS */
+	
+  }
+  
+  /* 
+	##Device = Laptops, Desktops
+	##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+	
+	/* //CSS */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (portrait)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+	
+	/* //CSS */
+	
+  }
+  
+  /* 
+	##Device = Tablets, Ipads (landscape)
+	##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	
+	/* //CSS */
+	
+  }
+  
+  /* 
+	##Device = Low Resolution Tablets, Mobiles (Landscape)
+	##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+	
+	/* .contenedor-flex{
+		display: flex !important;
+		justify-content: start;
+		width: 100%;
+	} */
+
+	#GC{
+		display: inline-block !important;
+		width: 40%;
+	}
+
+	#GI{
+		display: inline-block !important;
+		width: 60%;
+		height: 100%;
+		position: fixed;
+	}
+
+	.marco-mapa{
+		border: 0px;
+		height: 100%;
+		width: 100%;
+	}
+
+	.mapa-padre1{
+		height: 75%;
+	}
+
+	.mapa-padre{
+		height: 100%;
+	}
+
+	.mapa-padre7{
+		height: 86%;
+		padding-left: 0%;
+		padding-right: 2%;
+		padding-top: 0.5%;
+	}
+
+	.pestana, .img-fluid, .navegacion, .espacio-oculto{
+		display: none;
+	}
+
+	.sticky-top{
+		height: 3.5rem;
+	}
+	
+	.mobileMenu{
+		width: 50% !important;
+	}
+
+	.row.boton:hover{
+		background-color: rgba(199, 168, 32, 0.432);
+		border: 0.2rem solid rgb(199, 168, 32);
+		box-shadow: 0px 2px 4px rgba(206, 11, 11, 0.418);
+	}
+	
+  }
+  
+  /* 
+	##Device = Most of the Smartphones Mobiles (Portrait)
+	##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+	
+	.mapa-padre1{
+		height: 80%;
+	}
+
+	.mapa-padre{
+		height: 60vh;
+	}
+
+	.mapa-padre7{
+		height: 80vh;
+	}
+
+	.marco-mapa{
+		border: 0px;
+		height: 92%;
+		width: 100%;
+	}
+	
+  }
+
+
+
+  /**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+  main, #messages-card {
+	height: 100%;
+	padding-bottom: 0;
+  }
+  #messages-card-container {
+	height: calc(100% - 35px);
+	padding-bottom: 0;
+  }
+  #messages-card {
+	margin-top: 15px;
+  }
+  .mdl-layout__header-row span {
+	margin-left: 15px;
+	margin-top: 17px;
+  }
+  .mdl-grid {
+	max-width: 1024px;
+	padding: 0 !important;
+	/* margin: auto; */
+  }
+  .material-icons {
+	font-size: 36px;
+	top: 8px;
+	position: relative;
+  }
+  .mdl-layout__header-row {
+	padding: 0;
+	margin: 0 auto;
+  }
+  .mdl-card__supporting-text {
+	width: auto;
+	height: 100%;
+	padding-top: 0;
+	padding-bottom: 0;
+  }
+  #messages {
+	overflow-y: auto;
+	margin-bottom: 10px;
+	height: calc(100% - 80px);
+	display: flex;
+	flex-direction: column;
+  }
+  #message-filler {
+	flex-grow: 1;
+  }
+  .message-container:first-of-type {
+	border-top-width: 0;
+  }
+  .message-container {
+	display: block;
+	margin-top: 10px;
+	border-top: 1px solid #f3f3f3;
+	padding-top: 10px;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+  }
+  .message-container.visible {
+	opacity: 1;
+  }
+  .message-container .pic {
+	background-image: url('/images/profile_placeholder.png');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	background-size: 30px;
+	border-radius: 20px;
+  }
+  .message-container .spacing {
+	display: table-cell;
+	vertical-align: top;
+  }
+  .message-container .message {
+	display: table-cell;
+	width: calc(100% - 40px);
+	padding: 5px 0 5px 10px;
+  }
+  .message-container .name {
+	display: inline-block;
+	width: 100%;
+	padding-left: 40px;
+	color: #bbb;
+	font-style: italic;
+	font-size: 12px;
+	box-sizing: border-box;
+  }
+  #message-form {
+	display: flex;
+	flex-direction: row;
+	width: calc(100% - 48px);
+	float: left;
+  }
+  #image-form {
+	display: flex;
+	flex-direction: row;
+	width: 48px;
+	float: right;
+  }
+  #message-form .mdl-textfield {
+	width: calc(100% - 100px);
+  }
+  #message-form button, #image-form button {
+	width: 100px;
+	margin: 15px 0 0 10px;
+  }
+  .mdl-card {
+	min-height: 0;
+  }
+  .mdl-card {
+	background: linear-gradient(white, #f9f9f9);
+	justify-content: space-between;
+  }
+  #user-container {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	/* top: 22px; */
+	width: 100%;
+	right: 0;
+	padding-left: 10px;
+	justify-content: space-between;
+	padding-right: 10px;
+  }
+  #goback{
+	  display: flex;
+
+  }
+  #user-container #user-pic {
+	top: -3px;
+	position: relative;
+	display: inline-block;
+	background-image: url('/images/profile_placeholder.png');
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	background-size: 40px;
+	border-radius: 20px;
+  }
+  #user-container #user-name {
+	font-size: 16px;
+	line-height: 36px;
+	padding-right: 10px;
+	padding-left: 20px;
+  }
+  #image-form #submitImage {
+	width: auto;
+	padding: 0 6px 0 1px;
+	min-width: 0;
+  }
+  #image-form #submitImage .material-icons {
+	top: -1px;
+  }
+  .message img {
+	max-width: 300px;
+	max-height: 200px;
+  }
+  #mediaCapture {
+	display: none;
+  }
+  @media screen and (max-width: 610px) {
+	header {
+		background-color: #981717 !important;
+	}
+	#user-container {
+	  /* top: 72px; */
+	  background-color: #981717;
+	  /* height: 38px; */
+	  /* padding-top: 3px; */
+	  padding-right: 2px;
+	}
+	#user-container #user-pic {
+	  top: 2px;
+	  width: 33px;
+	  height: 33px;
+	  background-size: 33px;
+	}
+  }
+  .mdl-textfield__label:after {
+	background-color: #0288D1;
+  }
+  .mdl-textfield--floating-label.is-focused .mdl-textfield__label {
+	color: #0288D1;
+  }
+  .mdl-button .material-icons {
+	top: -1px;
+	margin-right: 5px;
+  }
+
+  
